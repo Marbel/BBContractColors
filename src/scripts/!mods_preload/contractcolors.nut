@@ -16,21 +16,29 @@ enum ContractType {
 ::mods_queue(null, "mod_msu", function()
 {
     ::ContractColors.Mod <- ::MSU.Class.Mod(::ContractColors.ID, ::ContractColors.Version, ::ContractColors.Name);
-    ::MSU.Log.printData("Start " + ::ContractColors.Name);
     ::mods_hookDescendants("contracts/contract", function(contract){
         local contractCreateScreens = ::mods_getMember(contract, "createScreens");
         contract.createScreens = function(){
             contractCreateScreens();
-            ::ContractColors.colorScreens(this.m.Screens, this);
+            ::ContractColors.colorScreens(this.m.Screens);
         }
     })
 
-    ::ContractColors.colorScreens <- function(screens, contract) {
+    ::ContractColors.colorScreens <- function(screens) {
         foreach(screen in screens){
             if (::MSU.String.startsWith(screen.ID, "Task") == false) {
                 continue;
             }
-            screen.Text = colorTargets(screen.Text);
+
+            if ("start" in screen){
+                local screenStart = screen.start;
+                screen.start = function(){
+                    screenStart();
+                    this.Text = ::ContractColors.colorTargets(this.Text);
+                }
+            }else{
+                screen.Text = ::ContractColors.colorTargets(screen.Text);
+            }
         }
     }
 
@@ -94,6 +102,7 @@ enum ContractType {
                 "nomads",
                 "desert bandits",
                 "brigand",
+                "thieves "
                 "vandals",
                 "vagabonds",
                 "undead",
@@ -109,7 +118,7 @@ enum ContractType {
                 "nightmares",
                 "witches",
                 "beautiful women",
-                "orc",
+                " orc",
                 "greenskin",
                 "greenies",
                 "goblins",
@@ -201,7 +210,8 @@ enum ContractType {
         {
             type = ContractType.number,
             keywords = [
-                "%number%"
+                "%number%",
+                "%numberC%"
             ]
         }
     ];
