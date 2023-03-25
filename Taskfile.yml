@@ -1,12 +1,12 @@
 version: '3'
 
 env:
-  Version: 1.1.0
+  Version: 1.2.0
 
 tasks:
   build:
     cmds:
-      - Powershell.exe Copy-Item -Path ./src/* -Destination ./tmp -Force -Recurse
+      - Powershell.exe Copy-Item -Path "./src/*" -Destination ./tmp -Force -Recurse
       - Powershell.exe "((Get-Content -path ./tmp/scripts/!mods_preload/contractcolors.nut -Raw) -replace '%VERSION%','$Version') | Set-Content -Path ./tmp/scripts/!mods_preload/contractcolors.nut"
       - Powershell.exe Compress-Archive -Path ./tmp/*, ./CHANGELOG.md  -DestinationPath ./dist/mod_contractcolors.zip -Force
     silent: true
