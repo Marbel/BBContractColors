@@ -7,7 +7,7 @@
 ::MSU.includeFile("contractColors/", "cC_importantTargets.nut");
 
 ::mods_registerMod(::ContractColors.ID, ::ContractColors.Version);
-::mods_queue(null, "mod_msu", function()
+::mods_queue(null, "mod_msu, mod_legends", function()
 {
     ::ContractColors.Mod <- ::MSU.Class.Mod(::ContractColors.ID, ::ContractColors.Version, ::ContractColors.Name);
     ::mods_hookBaseClass("contracts/contract",  function(contract){
