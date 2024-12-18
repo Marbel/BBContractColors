@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2024-12-18
+### Added
+- Load legends before this mod
+
 ## [1.2.0] - 2023-03-25
 ### Added
 - MSU Settings support, you can choose your own colors now
