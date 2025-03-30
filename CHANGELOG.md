@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-03-30
+### Fixed
+- Make Contract Colors compatible with new MSU und modern hooks
+
 ## [1.2.1] - 2024-12-18
 ### Added
 - Load legends before this mod
