@@ -14,6 +14,7 @@ enum ContractType {
         color = "#941C2F",
         defaultColor = "148,28,47,1",
         keywords = [
+            "brigands",
             "beasts",
             " king",
             "ifrits",

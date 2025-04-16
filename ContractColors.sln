@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vanilla_files", "vanilla_files", "{30CE7788-C1A5-FFAC-E80B-A7521FE60AAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bbros", "bbros", "{7D0EEE6F-E7C4-33E4-E47D-643EB6575AE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{201A4659-D171-1449-0E8D-01F1E36BD6F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bbrusher", "vanilla_files\bbros\src\bbrusher\bbrusher.csproj", "{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D0EEE6F-E7C4-33E4-E47D-643EB6575AE3} = {30CE7788-C1A5-FFAC-E80B-A7521FE60AAD}
+		{201A4659-D171-1449-0E8D-01F1E36BD6F5} = {7D0EEE6F-E7C4-33E4-E47D-643EB6575AE3}
+		{56D77F3A-2C9B-FCCE-732E-B70D1C3D9AA5} = {201A4659-D171-1449-0E8D-01F1E36BD6F5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5A2BB4C-6661-4BD6-8B3C-140C66460EE3}
+	EndGlobalSection
+EndGlobal

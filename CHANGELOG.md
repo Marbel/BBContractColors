@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2025-04-16
+### Fixed
+- Added "brigands" as a enemy highlight, before only brigand was highlighted
+
 ## [1.3.0] - 2025-03-30
 ### Fixed
 - Make Contract Colors compatible with new MSU und modern hooks
