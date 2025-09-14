@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.2] - 2025-09-14
+### Fixed
+- Added "caravans" as a ContractType.CARAVAN highlight, before only caravan was highlighted
+
 ## [1.3.1] - 2025-04-16
 ### Fixed
 - Added "brigands" as a enemy highlight, before only brigand was highlighted

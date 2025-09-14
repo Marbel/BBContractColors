@@ -117,6 +117,7 @@ enum ContractType {
         color = "#9D9FEB",
         defaultColor = "157,159,235,1",
         keywords = [
+            "caravans",
             "caravan",
             "%envoy%",
             "%protectee%"
